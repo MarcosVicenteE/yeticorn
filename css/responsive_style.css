@@ -3,6 +3,11 @@
 }
 
 /* Responsive Media Query */
+@media only screen and (max-width: 1315px) {
+    div#photos {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 1293px) {
     .background#intro,
     .background#one,
@@ -30,11 +35,21 @@
     .intro {
         top: 30vh;
     }
-
+    .project-item{
+        height: auto;
+    }
     section.main.style2.left.dark.fullscreen,
     section.main.style2.right.dark.fullscreen {
         width: auto;
         margin: 25vh 7% 7%;
+    }
+
+    div.container#photos {
+        width: auto;
+    }
+
+    .container.header_gallery {
+        padding-top: 5vh;
     }
 }
 

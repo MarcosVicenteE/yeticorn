@@ -8,6 +8,7 @@
  * 6. My Work
  * 7. Contact
  * 8. Footer
+ * 9. Gallery
  **************************/
 /*
  * 0. Font imports
@@ -107,6 +108,10 @@ a:focus {
     font-family: 'Source Sans Pro';
 }
 
+.padding_seven {
+    padding: 7%;
+}
+
 /*
  * 2. Header
  */
@@ -131,7 +136,7 @@ a:focus {
  * 3. Background Intro
  */
 .background#intro {
-    background: url("../img/intro.jpg") no-repeat;
+    background: url("https://images.unsplash.com/28/purple-beach.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=504729db68800343a191176dcc079402") no-repeat center;
     background-size: 100%;
 }
 
@@ -179,7 +184,7 @@ footer.arrow {
  * 4. Background One
  */
 .background#one {
-    background: url("../img/one.jpg") no-repeat;
+    background: url("../img/one.jpg") no-repeat center;
     background-size: 100%;
 }
 
@@ -194,7 +199,7 @@ section.main.style2.right.dark.fullscreen {
  * 5. Background Two
  */
 .background#two {
-    background: url("../img/two.jpg") no-repeat;
+    background: url("https://images.unsplash.com/photo-1414202251636-d05ac44c0182?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=95dd8c65b835464f99ae974dafe90b24") no-repeat center;
     background-size: 100%;
 }
 
@@ -221,6 +226,7 @@ section.main.style2.left.dark.fullscreen {
 
 .project-item {
     width: 100%;
+    height: 250px;
     margin-bottom: 2px;
     overflow: hidden;
     position: relative;
@@ -338,34 +344,45 @@ section.main.style2.left.dark.fullscreen {
     padding: 1.5%;
 }
 
-/*--------------------------------------*/
-
-.sidebar-menu {
-    width: 23%;
-    height: 100%;
-    position: fixed;
-    background-color: #5f6d7e;
-    color: white;
-    overflow-y: hidden;
-    text-align: right;
-    right: 0;
+/*
+ * 9. Gallery
+ */
+.header_gallery .page-section header {
+    padding-bottom: 0%;
 }
 
-#header {
-    margin: 0;
-    border: 0;
-    vertical-align: baseline;
-    padding: 3em 2.25em 1.75em 2.25em;
+.header_gallery div#footer {
+    padding-bottom: 10%;
 }
 
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-    font-size: 25pt;
+div#photos {
+    width: 1292.3px;
 }
 
-ul.icons li {
-    display: inline-block;
-    padding: 0 1em 0 0;
+.project-item.gallery {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    height: auto;
+}
+
+#photos_icon {
+    font-size: 35px;
+}
+
+.caption.title {
+    font-size: 1.5rem;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
 }
